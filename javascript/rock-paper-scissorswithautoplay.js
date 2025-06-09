@@ -5,7 +5,7 @@ let score = JSON.parse(localStorage.getItem('score')) || {
     };
 updateScoreElement();
 document.querySelector('.js-rock-button').addEventListener('click',()=>{
-    playGame('rock');
+    playGame('Rock');
 });
 document.querySelector('.js-paper-button').addEventListener('click',()=>{
     playGame('paper');
@@ -84,7 +84,7 @@ function computerPick1(){
     const va=Math.random();
     let pick='';
     if(va>=0 && va<1/3){
-        pick='Rock';
+        pick='rock';
     }
     else if(va>=1/3&&va<2/3){
         pick='paper';
