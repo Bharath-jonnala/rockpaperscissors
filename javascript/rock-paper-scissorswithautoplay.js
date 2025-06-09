@@ -5,7 +5,7 @@ let score = JSON.parse(localStorage.getItem('score')) || {
     };
 updateScoreElement();
 document.querySelector('.js-rock-button').addEventListener('click',()=>{
-    playGame('Rock');
+    playGame('rock');
 });
 document.querySelector('.js-paper-button').addEventListener('click',()=>{
     playGame('paper');
